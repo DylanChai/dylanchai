@@ -1,31 +1,36 @@
-@"
 name: build-and-deploy
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main        # run on every push to main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - run: npm ci          # install deps
-      - run: npm run build   # vite build → dist/
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Upload via FTPS to cPanel
+      - name: Build site
+        run: npm run build          # creates dist/
+
+      - name: Upload to cPanel via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          server:     \${{ secrets.FTP_SERVER }}
-          username:   \${{ secrets.FTP_USERNAME }}
-          password:   \${{ secrets.FTP_PASSWORD }}
+          server:     ${{ secrets.FTP_SERVER }}
+          username:   ${{ secrets.FTP_USERNAME }}
+          password:   ${{ secrets.FTP_PASSWORD }}
           protocol:   ftps
           local-dir:  dist
-          server-dir: /dylanchai.com/public_html/   
-          dangerous-clean-slate: true   # wipe old files first
-"@ > .github\workflows\deploy.yml
+          server-dir: /dylanchai.com/public_html/        # change if your FTP user’s path differs
+          dangerous-clean-slate: true
