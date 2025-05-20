@@ -33,5 +33,5 @@ jobs:
           password:   ${{ secrets.FTP_PASSWORD }}
           protocol:   ftp
           local-dir:  dist/
-          server-dir: ./      # change if your FTP user’s path differs
+          server-dir: ./      # chdange if your FTP user’s path differs
           dangerous-clean-slate: true
