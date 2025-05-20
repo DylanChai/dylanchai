@@ -1,0 +1,31 @@
+@"
+name: build-and-deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm ci          # install deps
+      - run: npm run build   # vite build → dist/
+
+      - name: Upload via FTPS to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server:     \${{ secrets.FTP_SERVER }}
+          username:   \${{ secrets.FTP_USERNAME }}
+          password:   \${{ secrets.FTP_PASSWORD }}
+          protocol:   ftps
+          local-dir:  dist
+          server-dir: /dylanchai.com/public_html/   
+          dangerous-clean-slate: true   # wipe old files first
+"@ > .github\workflows\deploy.yml
