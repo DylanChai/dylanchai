@@ -116,7 +116,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="w-full md:w-1/2 md:pr-8">
               <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                Hiiiiiii, I'm{" "}
+                Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                   Dylan Chai
                 </span>
