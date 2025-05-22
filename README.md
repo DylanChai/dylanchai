@@ -1,54 +1,40 @@
-# React + TypeScript + Vite
+# 👋 Hi, I'm Dylan Chai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm a Computer Science graduate from SETU (South East Technological University) with a strong focus on building clean, performant, and automated front-end solutions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Featured Project
 
-## Expanding the ESLint configuration
+### [DylanChai.com](https://dylanchai.com)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> A zero-touch, fully automated developer portfolio site.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+DylanChai.com is a **single-page, fully responsive portfolio** built with:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ⚛️ **React** & **TypeScript** for modern component-based architecture
+- ⚡ **Vite** for ultra-fast dev HMR and production builds
+- 🎨 **Tailwind CSS** (customized via PostCSS) for sleek, utility-first styling
+- 🖼️ **lucide-react** SVG icons for crisp visuals
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🛠️ DevOps Highlights
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+A **CI/CD pipeline** powered by **GitHub Actions** handles every deploy:
+
+1. Triggers on push to `main`
+2. Runs `npm ci` and `npm run build`
+3. Uses **SamKirkland's FTP-Deploy Action** to FTPS-deploy to a cPanel host
+
+> ✅ The result? Every commit goes live automatically — no manual steps needed.
+
+---
+
+## 💼 Let's Connect
+
+- 🌐 [Visit DylanChai.com](https://dylanchai.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/dylanchai) *(or update with your actual link)*
+- 📧 Email: yourname@example.com *(replace with your real one)*
+
+---
+
+Thanks for stopping by! I’m always open to feedback, collaboration, or just chatting about code, DevOps, or modern web tools.
