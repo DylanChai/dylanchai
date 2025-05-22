@@ -1,40 +1,86 @@
 # 👋 Hi, I'm Dylan Chai
 
-I'm a Computer Science graduate from SETU (South East Technological University) with a strong focus on building clean, performant, and automated front-end solutions.
+I'm a Computer Science graduate from **SETU** 
+---
+
+## 🌐 Featured Project: [DylanChai.com](https://DylanChai.com)
+
+> A fully automated, ultra-fast developer portfolio site.
+
+- Built with **React**, **TypeScript**, and **Vite** for lightning-fast HMR and production builds.
+- Styled using **Tailwind CSS** (PostCSS-customized) + **lucide-react** icons.
+- Deployed via **GitHub Actions** → runs tests, builds, then FTPS-deploys to cPanel with **SamKirkland’s FTP-Deploy**.
+- ✅ Zero-touch: site updates live with every push to `main`.
 
 ---
 
-## 🚀 Featured Project
+## 🎓 Final Year Project: FPL Squad Optimiser
 
-### [DylanChai.com](https://dylanchai.com)
+A machine learning–powered, end-to-end squad builder for Fantasy Premier League using Python:
 
-> A zero-touch, fully automated developer portfolio site.
+- 🔍 **6 ML models** (goals, assists, cards, clean sheets, bonus, total points) using `RandomForestRegressor` and `RandomForestClassifier`
+- 📊 Interactive **Streamlit dashboard** with real-time predictions and charts
+- 🧮 Squad optimiser built with **PuLP** (MILP) under full FPL constraints
+- 🔄 “Load My Team” feature via FPL API
 
-DylanChai.com is a **single-page, fully responsive portfolio** built with:
-
-- ⚛️ **React** & **TypeScript** for modern component-based architecture
-- ⚡ **Vite** for ultra-fast dev HMR and production builds
-- 🎨 **Tailwind CSS** (customized via PostCSS) for sleek, utility-first styling
-- 🖼️ **lucide-react** SVG icons for crisp visuals
-
-### 🛠️ DevOps Highlights
-
-A **CI/CD pipeline** powered by **GitHub Actions** handles every deploy:
-
-1. Triggers on push to `main`
-2. Runs `npm ci` and `npm run build`
-3. Uses **SamKirkland's FTP-Deploy Action** to FTPS-deploy to a cPanel host
-
-> ✅ The result? Every commit goes live automatically — no manual steps needed.
+> Key Learnings: ML model calibration, constraint optimisation, live data integration, and full-stack product design.
+- Dashboard Link: (https://fplchai-ai.streamlit.app/)
 
 ---
 
-## 💼 Let's Connect
+## 💼 Experience
 
-- 🌐 [Visit DylanChai.com](https://dylanchai.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/dylanchai) *(or update with your actual link)*
-- 📧 Email: yourname@example.com *(replace with your real one)*
+### 🏢 **Intel Corporation** – Physical Design Intern  
+📍 Hybrid / Remote | 🗓️ Jan 2024 – Sep 2024
+
+- Automated physical design flow scripts to **reduce tool runtime**, using **Perl** and **Python**
+- Worked closely with the RTL and PD teams on tooling optimisations
+- Used **Linux** daily for shell scripting and debugging workflows
+- Regularly connected via **VNC Viewer** to access remote EDA tools and test environments
+- Gained real-world experience in a fast-paced **semiconductor engineering** environment
 
 ---
 
-Thanks for stopping by! I’m always open to feedback, collaboration, or just chatting about code, DevOps, or modern web tools.
+## 🛠️ Languages & Tools
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" alt="android" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" alt="firebase" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/haskell/haskell-original.svg" alt="haskell" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="kotlin" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongodb" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="mysql" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="30" height="30"/>
+</p>
+
+---
+
+## 📊 GitHub Stats
+
+| ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dylanchai&show_icons=true&hide=stars&count_private=true&theme=default) |
+|---|---|
+
+
+---
+
+## 📫 Connect With Me
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dylan-chai16/)
+- 📧 Email: Dylanchai2003@gmail.com
+- 🌐 Website: [DylanChai.com](https://DylanChai.com)
+
+---
+
