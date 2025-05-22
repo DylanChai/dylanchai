@@ -10,6 +10,7 @@ I'm a Computer Science graduate from **SETU**
 - Built with **React**, **TypeScript**, and **Vite** for lightning-fast HMR and production builds.
 - Styled using **Tailwind CSS** (PostCSS-customized) + **lucide-react** icons.
 - Deployed via **GitHub Actions** → runs tests, builds, then FTPS-deploys to cPanel with **SamKirkland’s FTP-Deploy**.
+- CICD pipeline to automate pushes 
 - ✅ Zero-touch: site updates live with every push to `main`.
 
 ---
